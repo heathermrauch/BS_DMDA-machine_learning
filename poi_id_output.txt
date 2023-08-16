@@ -1,0 +1,243 @@
+Feature Scores:
+        salary: 15.806
+        total_payments: 8.963
+        exercised_stock_options: 9.956
+        bonus: 30.652
+        restricted_stock: 8.051
+        total_stock_value: 10.815
+        expenses: 4.314
+        other: 3.197
+        proportion_from_poi: 0.491
+        proportion_to_poi: 13.791
+        proportion_shared_with_poi: 10.008
+
+Iterative feature testing:
+Using best 1 feature(s):
+Features Used: ['bonus']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.75822       Precision: 0.42869      Recall: 0.26450 F1: 0.32715     F2: 0.28644
+Total predictions: 9000 True positives:  529    False positives:  705   False negatives: 1471   True negatives: 6295
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.77811       Precision: 0.50691      Recall: 0.05500 F1: 0.09923     F2: 0.06693
+Total predictions: 9000 True positives:  110    False positives:  107   False negatives: 1890   True negatives: 6893
+
+Using best 2 feature(s):
+Features Used: ['bonus', 'salary']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.65350       Precision: 0.16750      Recall: 0.18450 F1: 0.17559     F2: 0.18083
+Total predictions: 10000        True positives:  369    False positives: 1834   False negatives: 1631   True negatives: 6166
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.79920       Precision: 0.47468      Recall: 0.03750 F1: 0.06951     F2: 0.04597
+Total predictions: 10000        True positives:   75    False positives:   83   False negatives: 1925   True negatives: 7917
+
+Using best 3 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.75982       Precision: 0.33281      Recall: 0.31950 F1: 0.32602     F2: 0.32208
+Total predictions: 11000        True positives:  639    False positives: 1281   False negatives: 1361   True negatives: 7719
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.82155       Precision: 0.59113      Recall: 0.06000 F1: 0.10894     F2: 0.07314
+Total predictions: 11000        True positives:  120    False positives:   83   False negatives: 1880   True negatives: 8917
+
+Using best 4 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.79750       Precision: 0.30680      Recall: 0.33150 F1: 0.31867     F2: 0.32625
+Total predictions: 14000        True positives:  663    False positives: 1498   False negatives: 1337   True negatives: 10502
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.85300       Precision: 0.26230      Recall: 0.01600 F1: 0.03016     F2: 0.01970
+Total predictions: 14000        True positives:   32    False positives:   90   False negatives: 1968   True negatives: 11910
+
+Using best 5 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.79493       Precision: 0.29772      Recall: 0.32050 F1: 0.30869     F2: 0.31567
+Total predictions: 14000        True positives:  641    False positives: 1512   False negatives: 1359   True negatives: 10488
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.85250       Precision: 0.25926      Recall: 0.01750 F1: 0.03279     F2: 0.02151
+Total predictions: 14000        True positives:   35    False positives:  100   False negatives: 1965   True negatives: 11900
+
+Using best 6 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.79879       Precision: 0.32415      Recall: 0.37650 F1: 0.34837     F2: 0.36472
+Total predictions: 14000        True positives:  753    False positives: 1570   False negatives: 1247   True negatives: 10430
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.85143       Precision: 0.14912      Recall: 0.00850 F1: 0.01608     F2: 0.01048
+Total predictions: 14000        True positives:   17    False positives:   97   False negatives: 1983   True negatives: 11903
+
+Using best 7 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options', 'total_payments']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.81507       Precision: 0.30275      Recall: 0.29700 F1: 0.29985     F2: 0.29813
+Total predictions: 15000        True positives:  594    False positives: 1368   False negatives: 1406   True negatives: 11632
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.86207       Precision: 0.27451      Recall: 0.02100 F1: 0.03902     F2: 0.02576
+Total predictions: 15000        True positives:   42    False positives:  111   False negatives: 1958   True negatives: 12889
+
+Using best 8 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options', 'total_payments', 'restricted_stock']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.79767       Precision: 0.24343      Recall: 0.24550 F1: 0.24446     F2: 0.24508
+Total predictions: 15000        True positives:  491    False positives: 1526   False negatives: 1509   True negatives: 11474
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.86220       Precision: 0.21368      Recall: 0.01250 F1: 0.02362     F2: 0.01540
+Total predictions: 15000        True positives:   25    False positives:   92   False negatives: 1975   True negatives: 12908
+
+Using best 9 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options', 'total_payments', 'restricted_stock', 'expenses']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.81393       Precision: 0.30255      Recall: 0.30300 F1: 0.30277     F2: 0.30291
+Total predictions: 15000        True positives:  606    False positives: 1397   False negatives: 1394   True negatives: 11603
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.86220       Precision: 0.21368      Recall: 0.01250 F1: 0.02362     F2: 0.01540
+Total predictions: 15000        True positives:   25    False positives:   92   False negatives: 1975   True negatives: 12908
+
+Using best 10 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options', 'total_payments', 'restricted_stock', 'expenses', 'other']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.81513       Precision: 0.30951      Recall: 0.31400 F1: 0.31174     F2: 0.31309
+Total predictions: 15000        True positives:  628    False positives: 1401   False negatives: 1372   True negatives: 11599
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.86220       Precision: 0.21368      Recall: 0.01250 F1: 0.02362     F2: 0.01540
+Total predictions: 15000        True positives:   25    False positives:   92   False negatives: 1975   True negatives: 12908
+
+Using best 11 feature(s):
+Features Used: ['bonus', 'salary', 'proportion_to_poi', 'total_stock_value', 'proportion_shared_with_poi', 'exercised_stock_options', 'total_payments', 'restricted_stock', 'expenses', 'other', 'proportion_from_poi']
+DecisionTreeClassifier Results:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+Accuracy: 0.81140       Precision: 0.30043      Recall: 0.31200 F1: 0.30611     F2: 0.30962
+Total predictions: 15000        True positives:  624    False positives: 1453   False negatives: 1376   True negatives: 11547
+
+SVC Results:
+SVC(C=1.0, cache_size=200, class_weight=None, coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+Accuracy: 0.86220       Precision: 0.21368      Recall: 0.01250 F1: 0.02362     F2: 0.01540
+Total predictions: 15000        True positives:   25    False positives:   92   False negatives: 1975   True negatives: 12908
+
+Final Classifier:
+DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=None,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=3,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=42,
+            splitter='best')
+Accuracy: 0.76800       Precision: 0.35565      Recall: 0.34000 F1: 0.3476F2: 0.34302
+Total predictions: 11000        True positives:  680    False positives: 1232      False negatives: 1320   True negatives: 7768

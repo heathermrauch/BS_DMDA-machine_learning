@@ -1,0 +1,10 @@
+(lp0
+S'poi'
+p1
+aS'bonus'
+p2
+aS'salary'
+p3
+aS'proportion_to_poi'
+p4
+a.
